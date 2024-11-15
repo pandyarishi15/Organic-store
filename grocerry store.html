@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Veggie Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 Organic Veggie Store</h1>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#cart">Cart</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Shop Section -->
+        <section id="shop">
+            <h2>Shop Fresh Organic Veggies</h2>
+            <div class="products">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/sites/default/files/20180929_BLP506.jpg" alt="Carrots">
+                    <h3>Organic Carrots</h3>
+                    <p>Rs. 50 / kg</p>
+                    <button onclick="addToCart('Organic Carrots', 50)">Add to Cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-56196,resizemode-75,msid-95423774/magazines/panache/5-reasons-why-tomatoes-should-be-your-favourite-fruit-this-year.jpg" alt="Tomatoes">
+                    <h3>Organic Tomatoes</h3>
+                    <p>Rs. 100 / kg</p>
+                    <button onclick="addToCart('Organic Tomatoes', 100)">Add to Cart</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwNBouPPO_EuHY3iR-oWJFkQKiCht4b4WGCQ&s" alt="Spinach">
+                    <h3>Organic Spinach</h3>
+                    <p>Rs. 80/ kg</p>
+                    <button onclick="addToCart('Organic Spinach', 80)">Add to Cart</button>
+                </div>
+                  <!-- Product 3 -->
+                  <div class="product">
+                    <img src="https://cdn.britannica.com/37/174537-050-950EE618/Bulbs-cloves-garlic.jpg" alt="garlic">
+                    <h3>Organic Garlic</h3>
+                    <p>Rs. 100/ kg</p>
+                    <button onclick="addToCart('Organic Garlic', 100)">Add to Cart</button>
+                </div>  <!-- Product 3 -->
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3LwZqLCKFUyq0ZkjktMqeqtgikG1nYfedVQ&s" alt="ginger">
+                    <h3>Organic Ginger</h3>
+                    <p>Rs.150 / kg</p>
+                    <button onclick="addToCart('Organic Garlic', 150)">Add to Cart</button>
+                </div>  <!-- Product 3 -->
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWyB3EqqlINSeDYorx32CsnqRyT15cmRgYfQ&s" alt="potatoes">
+                    <h3>Organic potatoes</h3>
+                    <p>Rs. 40 / kg</p>
+                    <button onclick="addToCart('Organic Potatoes', 40)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <p id="total-price"></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Organic Veggie Store! We deliver fresh, organic vegetables sourced directly from local farms. Eat healthy, live better!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Organic Veggie Store. All rights reserved.</p>
+        
+            <p>&copy; Futuristic Attendance System. All rights reserved.</p>
+            <div class="contact-buttons">
+                <a href="mailto:pandyarishi15@gmail.com" class="button">
+                    <i class="fas fa-envelope"></i>
+                    <span class="icon-label">Mail</span>
+                </a>
+                <a href="tel:+919307379409" class="button">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="icon-label">Phone</span>
+                </a>
+                <a href="https://www.instagram.com/pandya_rishi/" class="button">
+                    <i class="fab fa-instagram"></i>
+                    <span class="icon-label">Instagram</span>
+                </a>
+            </div>
+        
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
